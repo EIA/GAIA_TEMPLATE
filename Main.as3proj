@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\shell.swf" />
+    <movie path="bin\main.swf" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
@@ -16,8 +16,8 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="src\project" />
     <class path="src\lib" />
+    <class path="src\project" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -52,7 +52,6 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="src\swc\index.swc" />
     <element path="src\lib\greensock.swc" />
   </libraryPaths>
   <!-- External Libraries -->
@@ -73,7 +72,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\project\pages\ShellPage.as" />
+    <compile path="src\Main.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

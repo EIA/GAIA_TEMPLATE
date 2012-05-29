@@ -10,10 +10,10 @@ package project.pages
 	import com.greensock.TweenMax;
 
 	[SWF(width = 1366, height = 768,backgroundColor = 0xffffff, frameRate = 30)]
-	public class IndexPage extends AbstractPage
+	public class ShellPage extends AbstractPage
 	{	
-		public var indexContent:MovieClip;
-		public function IndexPage():void {
+		public var shellPage:MovieClip;
+		public function ShellPage():void {
 			super();
 			visible = false;
 			//
@@ -34,19 +34,13 @@ package project.pages
 		override public function transitionInComplete():void 
 		{
 			super.transitionInComplete();
-			_indexInit();
+			_shellInit();
 		}
 		
-		private function _indexInit():void {
+		private function _shellInit():void {
 			visible = true;
-			//indexContent.playIndex();
 			///////////// test /////////////
-			addChild(indexContent = new MovieClip());
-			indexContent.graphics.beginFill(0x000000 , .3);
-			indexContent.graphics.drawRect( -50, -50, 100, 100);
-			indexContent.x = 300;
-			indexContent.y = 300;
-			TweenMax.to(this, 3.3, {x:0});
+			trace("_shellInit");
 			///////////// test /////////////
 		}
 		//////////////////////////////////////////////////////////////////////////////////////////////
