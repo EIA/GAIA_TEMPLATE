@@ -56,7 +56,7 @@ package project.pages
 		}
 		private function onResize(evt:Event = null):void {
 			Trace2(stage.stageWidth + " " + stage.stageHeight);
-			x = (stage.stageWidth - 960) * .5;
+			//x = (stage.stageWidth - 960) * .5;
 		}
 	}
 }
